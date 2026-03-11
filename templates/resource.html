@@ -1,187 +1,595 @@
 <!DOCTYPE HTML>
-<!--
-	SimLab by HyunHo Lee
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>SimLab by HyunHo Lee</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/css/main.css" />
-	</head>
-	<body class="is-preload right-sidebar">
-		<div id="page-wrapper">
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>DAS Lab — Resources</title>
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<style>
+		*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
+		:root {
+			--bg:        #050810;
+			--bg2:       #080d1a;
+			--surface:   #0d1525;
+			--border:    rgba(0, 200, 255, 0.12);
+			--cyan:      #00c8ff;
+			--cyan-dim:  rgba(0, 200, 255, 0.18);
+			--cyan-glow: rgba(0, 200, 255, 0.06);
+			--green:     #00ff9d;
+			--text:      #c8d8e8;
+			--text-dim:  #5a7080;
+			--mono:      'Share Tech Mono', monospace;
+			--sans:      'Syne', sans-serif;
+		}
 
-						<!-- Logo -->
-							<div id="logo">
-								<h1><a href="./index.html">SimLab</a></h1>
-								<span>by HyunHo Lee</span>
-							</div>
+		html { scroll-behavior: smooth; }
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a href="index.html">Welcome</a></li>
-									<li>
-										<a href="#">Simulation</a>
-										<ul>
-											<li><a href="#">Consulting</a></li>
-											<li><a href="#">Training</a></li>
-											<li><a href="#">Tools</a>
-												<ul>
-													<li><a href="#">AnyLogic</a></li>
-													<li><a href="#">anyLogistix</a></li>
-													<li><a href="#">Simio</a></li>
-													<li><a href="#">Arena</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Project</a></li>
+		body {
+			background: var(--bg);
+			color: var(--text);
+			font-family: var(--sans);
+			font-size: 15px;
+			line-height: 1.7;
+			overflow-x: hidden;
+		}
 
-										</ul>
-									</li>
-									<li><a href="introduction.html">Introduce</a></li>
-									<li class="current"><a href="resource.html">Resource</a></li>
-									<li><a href="reference.html">Reference</a></li>
-								</ul>
-							</nav>
+		body::before {
+			content: '';
+			position: fixed;
+			inset: 0;
+			background-image:
+				linear-gradient(rgba(0,200,255,0.03) 1px, transparent 1px),
+				linear-gradient(90deg, rgba(0,200,255,0.03) 1px, transparent 1px);
+			background-size: 48px 48px;
+			pointer-events: none;
+			z-index: 0;
+		}
 
-					</header>
-				</div>
+		nav {
+			position: fixed;
+			top: 0; left: 0; right: 0;
+			z-index: 100;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 3rem;
+			height: 64px;
+			background: rgba(5, 8, 16, 0.85);
+			backdrop-filter: blur(12px);
+			border-bottom: 1px solid var(--border);
+		}
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-8 col-12-medium">
-								<div id="content">
+		.nav-logo {
+			display: flex;
+			align-items: baseline;
+			gap: 10px;
+			text-decoration: none;
+		}
 
-									<!-- Content -->
-										<article>
+		.nav-logo-mark {
+			font-family: var(--sans);
+			font-weight: 800;
+			font-size: 1.35rem;
+			color: #fff;
+			letter-spacing: -0.02em;
+		}
 
-											<h2>Free Simulation Tutorial for beginners</h2>
+		.nav-logo-mark span { color: var(--cyan); }
 
-											<p>Contents will be uploading soon.</p>
-											<p>　</p>
-											<p>Please download <a href="https://www.anylogic.kr/resources/books/free-simulation-book-and-modeling-tutorials/">free book</a> for the time being.</p>
+		.nav-logo-sub {
+			font-family: var(--mono);
+			font-size: 0.65rem;
+			color: var(--text-dim);
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+		}
 
-										</article>
+		.nav-links {
+			display: flex;
+			gap: 2.5rem;
+			list-style: none;
+		}
 
-								</div>
-							</div>
-							<div class="col-4 col-12-medium">
-								<div id="sidebar">
+		.nav-links a {
+			font-family: var(--mono);
+			font-size: 0.72rem;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: var(--text-dim);
+			text-decoration: none;
+			transition: color 0.2s;
+		}
 
-									<!-- Sidebar -->
-										<section>
-											<h3>Simulation</h3>
-											<p>Simulation must be the best way to build a digital twin of your system of any kind.
-											We do make a professional simulation model for manufacturing system, logistic system(e.g. distribution center,
-											fulfillment center, supply chain), railway system, road traffic system, pedestrian system, war game and so on.
-											We don't build only tangible model that has low abstraction model but we also make intangible model related to
-											market competition, climates changes, dynamic politics etc.</p>
-											<footer>
-												<a href="https://www.anylogic.kr/resources/books/free-simulation-book-and-modeling-tutorials/" class="button icon solid fa-info-circle">Get a free Book</a>
-											</footer>
-										</section>
+		.nav-links a:hover { color: var(--cyan); }
 
-										<section>
-											<h3>Related Contents</h3>
-											<ul class="style2">
-												<li><a href="https://www.anylogic.kr/resources/books/free-simulation-book-and-modeling-tutorials/">Simulation book 1</a></li>
-												<li><a href="#">Simulation Video 1(on working)</a></li>
-												<li><a href="#">Simulation Video 2(not yet)</a></li>
-												<li><a href="#">Simulation Video 3(not yet)</a></li>
-												<li><a href="#">Simulation Video 4(not yet)</a></li>
-											</ul>
-										</section>
+		.nav-cta {
+			font-family: var(--mono);
+			font-size: 0.72rem;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: var(--cyan);
+			border: 1px solid var(--cyan);
+			padding: 8px 18px;
+			text-decoration: none;
+			transition: background 0.2s, color 0.2s;
+		}
 
-								</div>
-							</div>
-						</div>
+		.nav-cta:hover {
+			background: var(--cyan);
+			color: var(--bg);
+		}
+
+		#hero {
+			position: relative;
+			min-height: 72vh;
+			display: flex;
+			align-items: center;
+			padding: 120px 3rem 80px;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.hero-glow {
+			position: absolute;
+			top: 20%;
+			right: -10%;
+			width: 600px;
+			height: 600px;
+			background: radial-gradient(circle, rgba(0,200,255,0.07) 0%, transparent 70%);
+			pointer-events: none;
+		}
+
+		.hero-inner {
+			max-width: 1200px;
+			margin: 0 auto;
+			width: 100%;
+		}
+
+		.hero-tag {
+			font-family: var(--mono);
+			font-size: 0.72rem;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: var(--cyan);
+			margin-bottom: 1.5rem;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+
+		.hero-tag::before {
+			content: '';
+			display: inline-block;
+			width: 32px;
+			height: 1px;
+			background: var(--cyan);
+		}
+
+		.hero-title {
+			font-family: var(--sans);
+			font-weight: 800;
+			font-size: clamp(2.2rem, 5vw, 4.4rem);
+			line-height: 1.05;
+			letter-spacing: -0.03em;
+			color: #fff;
+			margin-bottom: 1.2rem;
+		}
+
+		.hero-title .accent { color: var(--cyan); }
+
+		.hero-desc {
+			font-size: 1.05rem;
+			color: var(--text-dim);
+			max-width: 720px;
+			margin-bottom: 2.2rem;
+			line-height: 1.8;
+		}
+
+		.hero-actions {
+			display: flex;
+			gap: 1rem;
+			flex-wrap: wrap;
+		}
+
+		.btn-primary {
+			font-family: var(--mono);
+			font-size: 0.78rem;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			background: var(--cyan);
+			color: var(--bg);
+			padding: 14px 28px;
+			text-decoration: none;
+			font-weight: 700;
+			transition: opacity 0.2s, transform 0.2s;
+		}
+
+		.btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+
+		.btn-outline {
+			font-family: var(--mono);
+			font-size: 0.78rem;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			border: 1px solid var(--border);
+			color: var(--text);
+			padding: 14px 28px;
+			text-decoration: none;
+			transition: border-color 0.2s, color 0.2s;
+		}
+
+		.btn-outline:hover { border-color: var(--cyan); color: var(--cyan); }
+
+		section {
+			position: relative;
+			z-index: 1;
+			padding: 100px 3rem;
+		}
+
+		.section-inner {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.section-label {
+			font-family: var(--mono);
+			font-size: 0.68rem;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: var(--cyan);
+			margin-bottom: 1rem;
+		}
+
+		.section-title {
+			font-family: var(--sans);
+			font-weight: 700;
+			font-size: clamp(1.8rem, 3vw, 2.6rem);
+			color: #fff;
+			margin-bottom: 1rem;
+			letter-spacing: -0.02em;
+		}
+
+		.section-desc {
+			color: var(--text-dim);
+			max-width: 720px;
+			margin-bottom: 3rem;
+		}
+
+		#services { background: var(--bg2); }
+		#about { background: var(--bg2); }
+
+		.cards-3 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1px;
+			background: var(--border);
+			border: 1px solid var(--border);
+		}
+
+		.cards-2 {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1px;
+			background: var(--border);
+			border: 1px solid var(--border);
+		}
+
+		.card {
+			background: var(--bg2);
+			padding: 2.5rem;
+			transition: background 0.3s;
+			position: relative;
+			overflow: hidden;
+		}
+
+		#clients .card { background: var(--bg); }
+		#clients .card:hover { background: var(--surface); }
+
+		.card::before {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0;
+			height: 2px;
+			background: var(--cyan);
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform 0.3s;
+		}
+
+		.card:hover { background: var(--surface); }
+		.card:hover::before { transform: scaleX(1); }
+
+		.card-kicker {
+			font-family: var(--mono);
+			font-size: 0.65rem;
+			letter-spacing: 0.2em;
+			color: var(--cyan);
+			margin-bottom: 1.2rem;
+			display: block;
+			text-transform: uppercase;
+		}
+
+		.card-title {
+			font-weight: 700;
+			font-size: 1.1rem;
+			color: #fff;
+			margin-bottom: 0.75rem;
+		}
+
+		.card-desc {
+			font-size: 0.88rem;
+			color: var(--text-dim);
+			line-height: 1.7;
+			margin-bottom: 1.25rem;
+		}
+
+		.card-actions {
+			display: flex;
+			gap: 0.75rem;
+			flex-wrap: wrap;
+		}
+
+		.card-actions a {
+			font-family: var(--mono);
+			font-size: 0.72rem;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			text-decoration: none;
+			border: 1px solid var(--border);
+			color: var(--text);
+			padding: 10px 14px;
+			transition: border-color 0.2s, color 0.2s, background 0.2s;
+		}
+
+		.card-actions a:hover {
+			border-color: var(--cyan);
+			color: var(--cyan);
+			background: rgba(0, 200, 255, 0.03);
+		}
+
+		.card-actions a.primary {
+			border-color: var(--cyan);
+			color: var(--bg);
+			background: var(--cyan);
+		}
+
+		.card-actions a.primary:hover { opacity: 0.9; color: var(--bg); }
+
+		footer {
+			position: relative;
+			z-index: 1;
+			background: var(--surface);
+			border-top: 1px solid var(--border);
+			padding: 2rem 3rem;
+		}
+
+		.footer-inner {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
+
+		.footer-copy {
+			font-family: var(--mono);
+			font-size: 0.68rem;
+			letter-spacing: 0.1em;
+			color: var(--text-dim);
+		}
+
+		.footer-links {
+			display: flex;
+			gap: 1.5rem;
+			list-style: none;
+		}
+
+		.footer-links a {
+			font-family: var(--mono);
+			font-size: 0.68rem;
+			letter-spacing: 0.1em;
+			color: var(--text-dim);
+			text-decoration: none;
+			transition: color 0.2s;
+		}
+
+		.footer-links a:hover { color: var(--cyan); }
+
+		body::after {
+			content: '';
+			position: fixed;
+			inset: 0;
+			background: repeating-linear-gradient(
+				0deg,
+				transparent,
+				transparent 2px,
+				rgba(0,0,0,0.03) 2px,
+				rgba(0,0,0,0.03) 4px
+			);
+			pointer-events: none;
+			z-index: 999;
+		}
+
+		@keyframes fadeUp {
+			from { opacity: 0; transform: translateY(24px); }
+			to   { opacity: 1; transform: translateY(0); }
+		}
+
+		.hero-tag   { animation: fadeUp 0.6s ease both; }
+		.hero-title { animation: fadeUp 0.6s 0.1s ease both; }
+		.hero-desc  { animation: fadeUp 0.6s 0.2s ease both; }
+		.hero-actions { animation: fadeUp 0.6s 0.3s ease both; }
+
+		@media (max-width: 900px) {
+			nav { padding: 0 1.5rem; }
+			.nav-links { display: none; }
+			section { padding: 70px 1.5rem; }
+			#hero { padding: 100px 1.5rem 60px; min-height: 70vh; }
+			.cards-3 { grid-template-columns: 1fr; }
+			.cards-2 { grid-template-columns: 1fr; }
+		}
+	</style>
+</head>
+<body>
+
+	<!-- NAV (same as index.html) -->
+	<nav>
+		<a href="index.html" class="nav-logo">
+			<span class="nav-logo-mark">DAS<span> Lab</span></span>
+			<span class="nav-logo-sub">Digital Twin · AI · Simulation</span>
+		</a>
+		<ul class="nav-links">
+			<li><a href="#services">Services</a></li>
+			<li><a href="#clients">Clients</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="resource.html">Resources</a></li>
+		</ul>
+		<a href="mailto:eugene4213@naver.com" class="nav-cta">Contact</a>
+	</nav>
+
+	<!-- HERO -->
+	<div id="hero">
+		<div class="hero-glow"></div>
+		<div class="hero-inner">
+			<p class="hero-tag">AnyLogic Learning · Books · Free Resources</p>
+			<h1 class="hero-title">
+				Resources,<br>
+				<span class="accent">Curated for Builders.</span>
+			</h1>
+			<p class="hero-desc">
+				A practical starter pack for learning AnyLogic and simulation modeling — curated materials, recommended books, and free resources you can use immediately.
+			</p>
+			<div class="hero-actions">
+				<a href="#services" class="btn-primary">Start Learning</a>
+				<a href="#about" class="btn-outline">Free Resources</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- ANYLOGIC LEARNING MATERIALS -->
+	<section id="services">
+		<div class="section-inner">
+			<p class="section-label">// AnyLogic</p>
+			<h2 class="section-title">Learning Materials</h2>
+			<p class="section-desc">From fundamentals to applied modeling patterns — best places to start and keep improving.</p>
+
+			<div class="cards-3">
+				<div class="card">
+					<span class="card-kicker">01 / Official</span>
+					<h3 class="card-title">AnyLogic Documentation</h3>
+					<p class="card-desc">Core reference for modeling blocks, libraries, and built-in concepts. Use it to confirm “how it works” while building models.</p>
+					<div class="card-actions">
+						<a class="primary" href="https://anylogic.help/" target="_blank" rel="noopener noreferrer">Open Docs</a>
+						<a href="https://www.anylogic.com/resources/" target="_blank" rel="noopener noreferrer">Resources</a>
 					</div>
 				</div>
 
-			<!-- Footer -->
-				<div id="footer-wrapper">
-					<footer id="footer" class="container">
-						<div class="row">
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Links -->
-									<section class="widget links">
-										<h3>Shortcuts</h3>
-										<ul class="style2">
-											<li><a href="#">link</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Links -->
-									<section class="widget links">
-										<h3>Shortcuts</h3>
-										<ul class="style2">
-											<li><a href="#">link</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Links -->
-									<section class="widget links">
-										<h3>Shortcuts</h3>
-										<ul class="style2">
-											<li><a href="#">link</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
-
-								<!-- Contact -->
-									<section class="widget contact last">
-										<h3>Contact Us</h3>
-										<ul>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										</ul>
-										<p>서울스퀘어 위워크 14층<br />
-										서울특별시 중구 한강대로<br />
-										010-2516-7047</p>
-									</section>
-
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12">
-								<div id="copyright">
-									<ul class="menu">
-										<li>&copy; SimLab. All rights reserved</li><li>Design: <a href="http://html5up.net">by HTML5 UP</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</footer>
+				<div class="card">
+					<span class="card-kicker">02 / Getting Started</span>
+					<h3 class="card-title">Free Book & Tutorials</h3>
+					<p class="card-desc">Beginner-friendly explanation of simulation concepts with examples. Great for learning the basics and building your first model.</p>
+					<div class="card-actions">
+						<a class="primary" href="https://www.anylogic.kr/resources/books/free-simulation-book-and-modeling-tutorials/" target="_blank" rel="noopener noreferrer">Get Free Book</a>
+						<a href="https://www.anylogic.kr/resources/" target="_blank" rel="noopener noreferrer">KR Resources</a>
+					</div>
 				</div>
 
+				<div class="card">
+					<span class="card-kicker">03 / Practice</span>
+					<h3 class="card-title">Modeling Patterns</h3>
+					<p class="card-desc">Reusable patterns for arrivals, batching, resources, routing, and KPI collection. Focus on structure, verification, and clean experiments.</p>
+					<div class="card-actions">
+						<a href="https://www.anylogic.com/resources/models/" target="_blank" rel="noopener noreferrer">Example Models</a>
+						<a href="mailto:eugene4213@naver.com" target="_blank" rel="noopener noreferrer">Ask DAS Lab</a>
+					</div>
+				</div>
 			</div>
+		</div>
+	</section>
 
-		<!-- Scripts -->
+	<!-- BOOKS -->
+	<section id="clients">
+		<div class="section-inner">
+			<p class="section-label">// Books</p>
+			<h2 class="section-title">Recommended Textbooks</h2>
+			<p class="section-desc">Books that help you go beyond “tool usage” — modeling rigor, experimentation, and trustworthy results.</p>
 
-			<script src="../static/js/jquery.min.js"></script>
-			<script src="../static/js/jquery.dropotron.min.js"></script>
-			<script src="../static/js/browser.min.js"></script>
-			<script src="../static/js/breakpoints.min.js"></script>
-			<script src="../static/js/util.js"></script>
-			<script src="../static/js/main.js"></script>
+			<div class="cards-2">
+				<div class="card">
+					<span class="card-kicker">01 / Fundamentals</span>
+					<h3 class="card-title">Simulation Modeling Basics</h3>
+					<p class="card-desc">Learn the core vocabulary: entities, events, queues, resources, variability, and how to interpret results without overconfidence.</p>
+					<div class="card-actions">
+						<a href="https://www.anylogic.kr/resources/books/free-simulation-book-and-modeling-tutorials/" target="_blank" rel="noopener noreferrer">Free Starter Book</a>
+					</div>
+				</div>
 
-	</body>
+				<div class="card">
+					<span class="card-kicker">02 / Experimentation</span>
+					<h3 class="card-title">Analysis & Validation</h3>
+					<p class="card-desc">Focus on verification/validation, scenario design, sensitivity checks, and KPI governance so your model becomes decision-grade.</p>
+					<div class="card-actions">
+						<a href="mailto:eugene4213@naver.com" target="_blank" rel="noopener noreferrer">Get Recommendations</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FREE RESOURCES -->
+	<section id="about">
+		<div class="section-inner">
+			<p class="section-label">// Free</p>
+			<h2 class="section-title">Free Resources</h2>
+			<p class="section-desc">Quick links you can use today: models, libraries, community knowledge, and learning materials.</p>
+
+			<div class="cards-3">
+				<div class="card">
+					<span class="card-kicker">01 / Models</span>
+					<h3 class="card-title">Example Model Library</h3>
+					<p class="card-desc">Browse ready-to-run examples to learn modeling structure, animation, and data collection.</p>
+					<div class="card-actions">
+						<a class="primary" href="https://www.anylogic.com/resources/models/" target="_blank" rel="noopener noreferrer">Browse Models</a>
+					</div>
+				</div>
+
+				<div class="card">
+					<span class="card-kicker">02 / Community</span>
+					<h3 class="card-title">AnyLogic Community</h3>
+					<p class="card-desc">Questions, troubleshooting, and implementation tips from other builders. Great for unblock and edge cases.</p>
+					<div class="card-actions">
+						<a class="primary" href="https://www.anylogic.com/forum/" target="_blank" rel="noopener noreferrer">Open Forum</a>
+					</div>
+				</div>
+
+				<div class="card">
+					<span class="card-kicker">03 / Training</span>
+					<h3 class="card-title">DAS Lab Training & Mentoring</h3>
+					<p class="card-desc">If you want a structured path: foundations → advanced patterns → validation → real project delivery. Customized for your domain.</p>
+					<div class="card-actions">
+						<a class="primary" href="mailto:eugene4213@naver.com" target="_blank" rel="noopener noreferrer">Contact</a>
+						<a href="introduction.html">About HyunHo</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-inner">
+			<span class="footer-copy">© 2026 DAS Lab. Digital Twin · AI · Simulation — Seoul, Korea</span>
+			<ul class="footer-links">
+				<li><a href="introduction.html">About</a></li>
+				<li><a href="resource.html">Resources</a></li>
+				<li><a href="reference.html">Reference</a></li>
+				<li><a href="mailto:eugene4213@naver.com">Contact</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</body>
 </html>
