@@ -198,9 +198,13 @@
 					<p class="contact-info-label">Office</p>
 					<p class="contact-info-value">4F, 147 Yanghwa-ro, Mapo-gu, Seoul, WeWork 115-15</p>
 				</div>
-				<div>
-
-				</div>
+				<form class="contact-form" onsubmit="return false;">
+					<input type="text" name="name" placeholder="Name / Organization" />
+					<input type="email" name="email" placeholder="Email Address" />
+					<input type="text" name="subject" placeholder="Project Type (Simulation / Digital Twin / Training)" />
+					<textarea name="message" placeholder="Describe your project or inquiry..."></textarea>
+					<button type="submit" class="btn-primary" style="cursor:pointer; border:none;">Send Message</button>
+				</form>
 			</div>
 		</div>
 	</section>

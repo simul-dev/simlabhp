@@ -198,9 +198,13 @@
 					<p class="contact-info-label">오피스</p>
 					<p class="contact-info-value">서울특별시 마포구 양화로 147 4층 wework 115-15</p>
 				</div>
-				<div>
-
-				</div>
+				<form class="contact-form" onsubmit="return false;">
+					<input type="text" name="name" placeholder="이름 / 조직명" />
+					<input type="email" name="email" placeholder="이메일 주소" />
+					<input type="text" name="subject" placeholder="프로젝트 유형 (Simulation / Digital Twin / Training)" />
+					<textarea name="message" placeholder="프로젝트나 문의 내용을 자유롭게 작성해 주세요."></textarea>
+					<button type="submit" class="btn-primary" style="cursor:pointer; border:none;">메시지 보내기</button>
+				</form>
 			</div>
 		</div>
 	</section>
