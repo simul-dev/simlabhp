@@ -56,9 +56,15 @@ nav {
 
 .nav-logo {
 	display: flex;
-	align-items: baseline;
-	gap: 10px;
+	align-items: center;
+	gap: 12px;
 	text-decoration: none;
+}
+
+.nav-logo-img {
+	display: block;
+	height: 30px;
+	width: auto;
 }
 
 .nav-logo-mark {
@@ -77,6 +83,8 @@ nav {
 	color: var(--text-dim);
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	line-height: 1;
+	padding-top: 2px;
 }
 
 .nav-links {
@@ -96,6 +104,44 @@ nav {
 }
 
 .nav-links a:hover { color: var(--cyan); }
+
+.nav-actions {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.nav-lang {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: var(--mono);
+	font-size: 0.72rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.nav-lang a {
+	color: var(--text-dim);
+	text-decoration: none;
+	transition: color 0.2s, background 0.2s, border-color 0.2s;
+	border: 1px solid transparent;
+	padding: 6px 10px;
+}
+
+.nav-lang a:hover { color: var(--cyan); }
+
+.nav-lang a.is-active {
+	color: var(--bg);
+	background: var(--cyan);
+	border-color: var(--cyan);
+}
+
+.nav-lang-sep {
+	color: var(--text-dim);
+	opacity: 0.6;
+	user-select: none;
+}
 
 .nav-cta {
 	font-family: var(--mono);
@@ -574,6 +620,8 @@ body::after {
 @media (max-width: 900px) {
 	nav { padding: 0 1.5rem; }
 	.nav-links { display: none; }
+	.nav-lang-sep { display: none; }
+	.nav-lang { gap: 6px; }
 	section { padding: 70px 1.5rem; }
 	#hero { padding: 100px 1.5rem 60px; }
 	.stats-inner { grid-template-columns: repeat(2, 1fr); }

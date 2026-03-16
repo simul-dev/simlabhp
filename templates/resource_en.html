@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ko">
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -475,23 +475,23 @@
 </head>
 <body>
 
-	<!-- NAV (aligned with index.html) -->
+	<!-- NAV (with language toggle) -->
 	<nav>
 		<a href="index.html" class="nav-logo">
 			<span class="nav-logo-mark">DAS<span> Lab</span></span>
 			<span class="nav-logo-sub">Digital Twin · AI · Simulation</span>
 		</a>
 		<ul class="nav-links">
-			<li><a href="#services">서비스</a></li>
-			<li><a href="#clients">클라이언트</a></li>
-			<li><a href="#about">소개</a></li>
-			<li><a href="resource.html">자료실</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#clients">Clients</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="resource.html">Resources</a></li>
 		</ul>
 		<div class="nav-actions">
 			<div class="nav-lang" aria-label="Language switch">
-				<a class="is-active" href="resource.html" aria-current="page">KR</a>
+				<a href="resource.html">KR</a>
 				<span class="nav-lang-sep">|</span>
-				<a href="resource_en.html">EN</a>
+				<a class="is-active" href="resource_en.html" aria-current="page">EN</a>
 			</div>
 			<a href="mailto:eugene4213@naver.com" class="nav-cta">Contact</a>
 		</div>
@@ -501,17 +501,17 @@
 	<div id="hero">
 		<div class="hero-glow"></div>
 		<div class="hero-inner">
-			<p class="hero-tag">AnyLogic 학습 · 도서 · 무료 리소스</p>
+			<p class="hero-tag">AnyLogic Learning · Books · Free Resources</p>
 			<h1 class="hero-title">
-				리소스 모음,<br>
-				<span class="accent">실무자를 위한 큐레이션.</span>
+				Resources,<br>
+				<span class="accent">Curated for Builders.</span>
 			</h1>
 			<p class="hero-desc">
-				AnyLogic와 시뮬레이션 모델링을 시작하고 깊게 공부할 수 있는 실무형 스타터 패키지입니다. 지금 바로 활용 가능한 자료, 추천 도서, 무료 리소스를 모아두었습니다.
+				A practical starter pack for learning AnyLogic and simulation modeling — curated materials, recommended books, and free resources you can use immediately.
 			</p>
 			<div class="hero-actions">
-				<a href="#services" class="btn-primary">학습 리소스 보기</a>
-				<a href="#about" class="btn-outline">무료 리소스 둘러보기</a>
+				<a href="#services" class="btn-primary">Start Learning</a>
+				<a href="#about" class="btn-outline">Free Resources</a>
 			</div>
 		</div>
 	</div>
@@ -520,14 +520,14 @@
 	<section id="services">
 		<div class="section-inner">
 			<p class="section-label">// AnyLogic</p>
-			<h2 class="section-title">학습 자료</h2>
-			<p class="section-desc">기초 개념부터 실무 모델링 패턴까지, 시뮬레이션/AnyLogic 학습을 시작하고 확장해 나가기 좋은 출발점들입니다.</p>
+			<h2 class="section-title">Learning Materials</h2>
+			<p class="section-desc">From fundamentals to applied modeling patterns — best places to start and keep improving.</p>
 
 			<div class="cards-3">
 				<div class="card">
-					<span class="card-kicker">01 / 공식 문서</span>
+					<span class="card-kicker">01 / Official</span>
 					<h3 class="card-title">AnyLogic Documentation</h3>
-					<p class="card-desc">모델링 블록, 라이브러리, 내장 개념에 대한 공식 레퍼런스입니다. 모델을 만들면서 “정확히 어떻게 동작하는지”를 확인할 때 가장 먼저 참고할 수 있는 자료입니다.</p>
+					<p class="card-desc">Core reference for modeling blocks, libraries, and built-in concepts. Use it to confirm “how it works” while building models.</p>
 					<div class="card-actions">
 						<a class="primary" href="https://anylogic.help/" target="_blank" rel="noopener noreferrer">Open Docs</a>
 						<a href="https://www.anylogic.com/resources/" target="_blank" rel="noopener noreferrer">Resources</a>
@@ -535,9 +535,9 @@
 				</div>
 
 				<div class="card">
-					<span class="card-kicker">02 / 입문</span>
-					<h3 class="card-title">무료 책 & 튜토리얼</h3>
-					<p class="card-desc">시뮬레이션 개념을 예제를 통해 이해할 수 있는 초보자 친화적인 자료입니다. 기초 이론을 익히고 첫 모델을 만들어보기 좋습니다.</p>
+					<span class="card-kicker">02 / Getting Started</span>
+					<h3 class="card-title">Free Book & Tutorials</h3>
+					<p class="card-desc">Beginner-friendly explanation of simulation concepts with examples. Great for learning the basics and building your first model.</p>
 					<div class="card-actions">
 						<a class="primary" href="https://www.anylogic.kr/resources/books/free-simulation-book-and-modeling-tutorials/" target="_blank" rel="noopener noreferrer">Get Free Book</a>
 						<a href="https://www.anylogic.kr/resources/" target="_blank" rel="noopener noreferrer">KR Resources</a>
@@ -545,9 +545,9 @@
 				</div>
 
 				<div class="card">
-					<span class="card-kicker">03 / 실습</span>
-					<h3 class="card-title">모델링 패턴</h3>
-					<p class="card-desc">도착 프로세스, 배치, 자원 관리, 경로 설정, KPI 수집 등에서 재사용 가능한 모델링 패턴에 집중합니다. 구조 설계, 검증, 실험 설계를 깔끔하게 가져가고 싶을 때 참고하기 좋습니다.</p>
+					<span class="card-kicker">03 / Practice</span>
+					<h3 class="card-title">Modeling Patterns</h3>
+					<p class="card-desc">Reusable patterns for arrivals, batching, resources, routing, and KPI collection. Focus on structure, verification, and clean experiments.</p>
 					<div class="card-actions">
 						<a href="https://www.anylogic.com/resources/models/" target="_blank" rel="noopener noreferrer">Example Models</a>
 						<a href="mailto:eugene4213@naver.com" target="_blank" rel="noopener noreferrer">Ask DAS Lab</a>
@@ -561,23 +561,23 @@
 	<section id="clients">
 		<div class="section-inner">
 			<p class="section-label">// Books</p>
-			<h2 class="section-title">추천 도서</h2>
-			<p class="section-desc">단순히 도구 사용법을 넘어서, 모델링 사고방식·실험 설계·신뢰할 수 있는 결과 해석을 돕는 책들을 모았습니다.</p>
+			<h2 class="section-title">Recommended Textbooks</h2>
+			<p class="section-desc">Books that help you go beyond “tool usage” — modeling rigor, experimentation, and trustworthy results.</p>
 
 			<div class="cards-2">
 				<div class="card">
-					<span class="card-kicker">01 / 기본기</span>
-					<h3 class="card-title">시뮬레이션 모델링 기초</h3>
-					<p class="card-desc">엔티티, 이벤트, 대기열, 자원, 변동성 등 핵심 개념을 체계적으로 다룹니다. 결과를 과신하지 않고 해석하는 법을 익히는 데 도움이 됩니다.</p>
+					<span class="card-kicker">01 / Fundamentals</span>
+					<h3 class="card-title">Simulation Modeling Basics</h3>
+					<p class="card-desc">Learn the core vocabulary: entities, events, queues, resources, variability, and how to interpret results without overconfidence.</p>
 					<div class="card-actions">
 						<a href="https://www.anylogic.kr/resources/books/free-simulation-book-and-modeling-tutorials/" target="_blank" rel="noopener noreferrer">Free Starter Book</a>
 					</div>
 				</div>
 
 				<div class="card">
-					<span class="card-kicker">02 / 실험</span>
-					<h3 class="card-title">분석 & 검증</h3>
-					<p class="card-desc">검증/검정(verification & validation), 시나리오 설계, 민감도 분석, KPI 관리에 초점을 맞춰 “의사결정에 쓸 수 있는 모델”로 만드는 과정을 다룹니다.</p>
+					<span class="card-kicker">02 / Experimentation</span>
+					<h3 class="card-title">Analysis & Validation</h3>
+					<p class="card-desc">Focus on verification/validation, scenario design, sensitivity checks, and KPI governance so your model becomes decision-grade.</p>
 					<div class="card-actions">
 						<a href="mailto:eugene4213@naver.com" target="_blank" rel="noopener noreferrer">Get Recommendations</a>
 					</div>
@@ -590,14 +590,14 @@
 	<section id="about">
 		<div class="section-inner">
 			<p class="section-label">// Free</p>
-			<h2 class="section-title">무료 리소스</h2>
-			<p class="section-desc">오늘 바로 활용할 수 있는 예제 모델, 라이브러리, 커뮤니티 지식, 학습 자료 링크를 모았습니다.</p>
+			<h2 class="section-title">Free Resources</h2>
+			<p class="section-desc">Quick links you can use today: models, libraries, community knowledge, and learning materials.</p>
 
 			<div class="cards-3">
 				<div class="card">
 					<span class="card-kicker">01 / Models</span>
-					<h3 class="card-title">예제 모델 라이브러리</h3>
-					<p class="card-desc">바로 실행할 수 있는 예제 모델들을 보면서 구조 설계, 애니메이션, 데이터 수집 방식을 함께 살펴볼 수 있습니다.</p>
+					<h3 class="card-title">Example Model Library</h3>
+					<p class="card-desc">Browse ready-to-run examples to learn modeling structure, animation, and data collection.</p>
 					<div class="card-actions">
 						<a class="primary" href="https://www.anylogic.com/resources/models/" target="_blank" rel="noopener noreferrer">Browse Models</a>
 					</div>
@@ -606,7 +606,7 @@
 				<div class="card">
 					<span class="card-kicker">02 / Community</span>
 					<h3 class="card-title">AnyLogic Community</h3>
-					<p class="card-desc">전 세계 사용자들이 올린 질문, 트러블슈팅, 구현 팁을 볼 수 있는 포럼입니다. 막혔을 때나 특수한 케이스를 다룰 때 특히 유용합니다.</p>
+					<p class="card-desc">Questions, troubleshooting, and implementation tips from other builders. Great for unblock and edge cases.</p>
 					<div class="card-actions">
 						<a class="primary" href="https://www.anylogic.com/forum/" target="_blank" rel="noopener noreferrer">Open Forum</a>
 					</div>
@@ -615,10 +615,10 @@
 				<div class="card">
 					<span class="card-kicker">03 / Training</span>
 					<h3 class="card-title">DAS Lab Training & Mentoring</h3>
-					<p class="card-desc">기초 → 고급 모델링 패턴 → 검증 → 실제 프로젝트 적용까지, 체계적인 학습 경로가 필요하다면 맞춤형 교육·멘토링 프로그램을 제공해 드립니다.</p>
+					<p class="card-desc">If you want a structured path: foundations → advanced patterns → validation → real project delivery. Customized for your domain.</p>
 					<div class="card-actions">
-						<a class="primary" href="mailto:eugene4213@naver.com" target="_blank" rel="noopener noreferrer">문의하기</a>
-						<a href="introduction.html">HyunHo 소개</a>
+						<a class="primary" href="mailto:eugene4213@naver.com" target="_blank" rel="noopener noreferrer">Contact</a>
+						<a href="introduction.html">About HyunHo</a>
 					</div>
 				</div>
 			</div>
@@ -630,10 +630,10 @@
 		<div class="footer-inner">
 			<span class="footer-copy">© 2026 DAS Lab. Digital Twin · AI · Simulation — Seoul, Korea</span>
 			<ul class="footer-links">
-				<li><a href="introduction.html">소개</a></li>
-				<li><a href="resource.html">자료실</a></li>
-				<li><a href="reference.html">레퍼런스</a></li>
-				<li><a href="mailto:eugene4213@naver.com">문의하기</a></li>
+				<li><a href="introduction.html">About</a></li>
+				<li><a href="resource.html">Resources</a></li>
+				<li><a href="reference.html">Reference</a></li>
+				<li><a href="mailto:eugene4213@naver.com">Contact</a></li>
 			</ul>
 		</div>
 	</footer>
