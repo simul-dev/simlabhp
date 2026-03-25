@@ -472,15 +472,15 @@
 
 	<!-- NAV (with language toggle) -->
 	<nav>
-		<a href="index.html" class="nav-logo">
+		<a href="index_en.html" class="nav-logo">
 			<img class="nav-logo-img" src="/static/logo/daslab_logo_dark_simple.svg" alt="DAS Lab" />
 			<span class="nav-logo-sub">Digital Twin · AI · Simulation</span>
 		</a>
 		<ul class="nav-links">
-			<li><a href="#services">Services</a></li>
-			<li><a href="#clients">Clients</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="resource.html">Resources</a></li>
+			<li><a href="index_en.html#services">Services</a></li>
+			<li><a href="index_en.html#clients">Clients</a></li>
+			<li><a href="index_en.html#about">About</a></li>
+			<li><a href="resource_en.html">Resources</a></li>
 		</ul>
 		<div class="nav-actions">
 			<div class="nav-lang" aria-label="Language switch">
@@ -488,7 +488,7 @@
 				<span class="nav-lang-sep">|</span>
 				<a class="is-active" href="resource_en.html" aria-current="page">EN</a>
 			</div>
-			<a href="https://open.kakao.com/me/daslab" class="nav-cta">Contact</a>
+			<a href="index_en.html#contact" class="nav-cta">Contact</a>
 		</div>
 	</nav>
 
@@ -498,8 +498,7 @@
 		<div class="hero-inner">
 			<p class="hero-tag">AnyLogic Learning · Books · Free Resources</p>
 			<h1 class="hero-title">
-				Resources,<br>
-				<span class="accent">Curated for Builders.</span>
+				Simulation Mastery <span class="accent">Starts Here.</span>
 			</h1>
 			<p class="hero-desc">
 				A practical starter pack for learning AnyLogic and simulation modeling — curated materials, recommended books, and free resources you can use immediately.
@@ -521,43 +520,41 @@
 			<div class="cards-3">
 				<div class="card">
 					<span class="card-kicker">01 / Official</span>
-					<h3 class="card-title">AnyLogic Documentation</h3>
-					<p class="card-desc">Core reference for modeling blocks, libraries, and built-in concepts. Use it to confirm “how it works” while building models.</p>
+					<h3 class="card-title">AnyLogic Tutorial</h3>
+					<p class="card-desc">Core reference for modeling blocks, libraries, and built-in concepts. Use it to confirm "how it works" while building models.</p>
 					<div class="card-actions">
-						<a class="primary" href="https://anylogic.help/" target="_blank" rel="noopener noreferrer">Open Docs</a>
-						<a href="https://www.anylogic.com/resources/" target="_blank" rel="noopener noreferrer">Resources</a>
+						<a class="primary" href="https://anylogic.help/tutorials/index.html" target="_blank" rel="noopener noreferrer">Open Tutorials</a>
 					</div>
 				</div>
 
 				<div class="card">
 					<span class="card-kicker">02 / Getting Started</span>
-					<h3 class="card-title">Free Book & Tutorials</h3>
+					<h3 class="card-title">Free Learning Materials</h3>
 					<p class="card-desc">Beginner-friendly explanation of simulation concepts with examples. Great for learning the basics and building your first model.</p>
 					<div class="card-actions">
 						<a class="primary" href="https://www.anylogic.kr/resources/books/free-simulation-book-and-modeling-tutorials/" target="_blank" rel="noopener noreferrer">Get Free Book</a>
-						<a href="https://www.anylogic.kr/resources/" target="_blank" rel="noopener noreferrer">KR Resources</a>
 					</div>
 				</div>
 
 				<div class="card">
-					<span class="card-kicker">03 / Practice</span>
-					<h3 class="card-title">Modeling Patterns</h3>
-					<p class="card-desc">Reusable patterns for arrivals, batching, resources, routing, and KPI collection. Focus on structure, verification, and clean experiments.</p>
+					<span class="card-kicker">03 / Advanced</span>
+					<h3 class="card-title">Building a Custom UI-Based Simulation Experiment Environment</h3>
+					<p class="card-desc">AnyLogic Private Cloud lets you deploy browser-based simulation experiment environments with no installation required. Parameter control, experiment execution, and result visualization — all in one interface, enabling field teams to run models directly.</p>
 					<div class="card-actions">
-						<a href="https://www.anylogic.com/resources/models/" target="_blank" rel="noopener noreferrer">Example Models</a>
-						<a href="/cdn-cgi/l/email-protection#22475745474c4716101311624c435447500c414d4f" target="_blank" rel="noopener noreferrer">Ask DAS Lab</a>
+						<a class="primary" href="https://cloud.anylogic.com/custom-ui-demo/index.html" target="_blank" rel="noopener noreferrer">View Demo</a>
+						<a href="https://open.kakao.com/me/daslab" target="_blank" rel="noopener noreferrer">Ask DAS Lab</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- BOOKS -->
+	<!-- BOOKS (hidden for now)
 	<section id="clients">
 		<div class="section-inner">
 			<p class="section-label">// Books</p>
 			<h2 class="section-title">Recommended Textbooks</h2>
-			<p class="section-desc">Books that help you go beyond “tool usage” — modeling rigor, experimentation, and trustworthy results.</p>
+			<p class="section-desc">Books that help you go beyond "tool usage" — modeling rigor, experimentation, and trustworthy results.</p>
 
 			<div class="cards-2">
 				<div class="card">
@@ -580,6 +577,7 @@
 			</div>
 		</div>
 	</section>
+	-->
 
 	<!-- FREE RESOURCES -->
 	<section id="about">
@@ -588,13 +586,13 @@
 			<h2 class="section-title">Free Resources</h2>
 			<p class="section-desc">Quick links you can use today: models, libraries, community knowledge, and learning materials.</p>
 
-			<div class="cards-3">
+			<div class="cards-2">
 				<div class="card">
 					<span class="card-kicker">01 / Models</span>
 					<h3 class="card-title">Example Model Library</h3>
 					<p class="card-desc">Browse ready-to-run examples to learn modeling structure, animation, and data collection.</p>
 					<div class="card-actions">
-						<a class="primary" href="https://www.anylogic.com/resources/models/" target="_blank" rel="noopener noreferrer">Browse Models</a>
+						<a class="primary" href="https://cloud.anylogic.com/models" target="_blank" rel="noopener noreferrer">Browse Models</a>
 					</div>
 				</div>
 
@@ -606,16 +604,6 @@
 						<a class="primary" href="https://www.anylogic.com/forum/" target="_blank" rel="noopener noreferrer">Open Forum</a>
 					</div>
 				</div>
-
-				<div class="card">
-					<span class="card-kicker">03 / Training</span>
-					<h3 class="card-title">DAS Lab Training & Mentoring</h3>
-					<p class="card-desc">If you want a structured path: foundations → advanced patterns → validation → real project delivery. Customized for your domain.</p>
-					<div class="card-actions">
-						<a class="primary" href="/cdn-cgi/l/email-protection#87e2f2e0e2e9e2b3b5b6b4c7e9e6f1e2f5a9e4e8ea" target="_blank" rel="noopener noreferrer">Contact</a>
-						<a href="introduction.html">About HyunHo</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -625,5 +613,11 @@
 		<div class="footer-inner">
 			<span class="footer-copy">© 2026 DAS Lab. Digital Twin · AI · Simulation — Seoul, Korea</span>
 			<ul class="footer-links">
-				<li><a href="introduction.html">About</a></li>
-				<li><a href="resource.html">Resources</a></li
+				<li><a href="index_en.html#about">About</a></li>
+				<li><a href="resource_en.html">Resources</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</body>
+</html>
