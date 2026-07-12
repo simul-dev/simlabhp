@@ -2,6 +2,7 @@
   "common": {
     "nav": {
       "services": "Services",
+      "approach": "Approach",
       "clients": "Clients",
       "about": "About",
       "resources": "Resources"
@@ -59,6 +60,36 @@
           "icon": "06 / RESEARCH",
           "title": "Research Collaboration",
           "description": "Joint research with academic institutions and government bodies. Technical writing, methodology design, and simulation-backed validation."
+        }
+      ]
+    },
+    "approach": {
+      "title": "We understand the problem first. The technology comes second.",
+      "description": "We structure each client's industrial problem, then select or combine Digital Twin, Simulation, and AI — whichever approach fits best — to deliver an actionable decision-making solution.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "DEEP DIVE",
+          "subtitle": "We embed where the problem lives.",
+          "description": "We go deep into the client's operating environment to analyze processes and pinpoint exactly where data and decisions actually flow."
+        },
+        {
+          "number": "02",
+          "title": "DEFINE",
+          "subtitle": "We turn problems into engineering targets.",
+          "description": "We structure the issues found on-site into quantifiable goals and success criteria, and define the scope of the solution."
+        },
+        {
+          "number": "03",
+          "title": "TECH DESIGN",
+          "subtitle": "We design the right technology mix.",
+          "description": "We select or combine Digital Twin, Simulation, and AI — whichever fits the problem best — to design the solution architecture."
+        },
+        {
+          "number": "04",
+          "title": "CLOSE",
+          "subtitle": "We ship solutions that work in production.",
+          "description": "Not a demo — we take ownership through handoff of models and decision-ready evidence validated in the client's actual operating environment."
         }
       ]
     },

@@ -6,6 +6,7 @@
 		</a>
 		<ul class="nav-links">
 			<li><a href="{{ '#services' if current_page == 'index' else url_for('home', lang=lang, _anchor='services') }}">{{ common.nav.services }}</a></li>
+			<li><a href="{{ '#our-approach' if current_page == 'index' else url_for('home', lang=lang, _anchor='our-approach') }}">{{ common.nav.approach }}</a></li>
 			<li><a href="{{ '#clients' if current_page == 'index' else url_for('home', lang=lang, _anchor='clients') }}">{{ common.nav.clients }}</a></li>
 			<li><a href="{{ '#about' if current_page == 'index' else url_for('home', lang=lang, _anchor='about') }}">{{ common.nav.about }}</a></li>
 			<li><a href="{{ url_for('resources', lang=lang) }}">{{ common.nav.resources }}</a></li>

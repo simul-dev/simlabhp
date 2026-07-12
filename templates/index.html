@@ -56,6 +56,25 @@
 		</div>
 	</section>
 
+	<!-- OUR APPROACH -->
+	<section id="our-approach">
+		<div class="section-inner">
+			<p class="section-label">// Our Approach</p>
+			<h2 class="section-title">{{ page.approach.title }}</h2>
+			<p class="section-desc">{{ page.approach.description }}</p>
+			<div class="approach-flow">
+				{% for step in page.approach.steps %}
+				<div class="approach-step">
+					<span class="approach-num">{{ step.number }}</span>
+					<h3 class="approach-title">{{ step.title }}</h3>
+					<p class="approach-subtitle">{{ step.subtitle }}</p>
+					<p class="approach-desc">{{ step.description }}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+
 	<!-- CLIENTS -->
 	<section id="clients">
 		<div class="section-inner">

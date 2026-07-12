@@ -4,7 +4,10 @@
       "Bash(tail -5 \"c:\\\\Users\\\\User\\\\OneDrive\\\\다스랩\\(전 심랩\\)\\\\simlabhp\\\\templates\\\\index.html\")",
       "Bash(wc -l \"c:\\\\Users\\\\User\\\\OneDrive\\\\다스랩\\(전 심랩\\)\\\\simlabhp\\\\templates\\\\index.html\")",
       "Bash(python3 -c \":*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(python -m unittest tests/test_i18n.py -v)",
+      "Bash(grep -iE '__pycache__|\\\\.pyc$|venv|\\\\.env')",
+      "Bash(python -c ' *)"
     ]
   }
 }
