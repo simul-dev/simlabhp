@@ -1,0 +1,183 @@
+{
+  "common": {
+    "nav": {
+      "services": "Services",
+      "clients": "Clients",
+      "about": "About",
+      "resources": "Resources"
+    }
+  },
+  "index": {
+    "meta": {
+      "title": "DAS Lab — Digital Twin · AI · Simulation"
+    },
+    "hero": {
+      "tag": "Digital Twin · AI · Simulation Consulting",
+      "title": "Complex operational decisions,",
+      "accent": "DAS Lab solves them.",
+      "description": "Digital Twin and AI-based Simulation built on real operational data — solving your organization's most complex decision-making challenges.",
+      "primary_action": "Request a Consultation",
+      "secondary_action": "Our Services"
+    },
+    "stats": [
+      { "value": "25+", "label": "Projects Delivered" },
+      { "value": "10+", "label": "Years Experience" },
+      { "value": "100+", "label": "Training Sessions" },
+      { "value": "15+", "label": "Enterprise Clients" }
+    ],
+    "services": {
+      "title": "Core Capabilities",
+      "description": "End-to-end simulation and digital twin engineering for complex operational systems.",
+      "description_emphasis": "",
+      "items": [
+        {
+          "icon": "01 / SIMULATION",
+          "title": "Simulation Consulting",
+          "description": "Discrete-event, agent-based, and system dynamics modeling across manufacturing, logistics, construction, defense, energy, and more. Powered by AnyLogic."
+        },
+        {
+          "icon": "02 / DIGITAL TWIN",
+          "title": "Digital Twin Development",
+          "description": "Real-time 3D digital twin systems with live data integration, scenario analysis, and operational monitoring."
+        },
+        {
+          "icon": "03 / AI",
+          "title": "AI-Driven Analytics",
+          "description": "Reinforcement learning-based agent policy optimization within AnyLogic simulation environments. Applied to scheduling, resource allocation, and operational decision benchmarking."
+        },
+        {
+          "icon": "04 / TRAINING",
+          "title": "Corporate Training & Mentoring",
+          "description": "From fundamentals to advanced modeling patterns, validation, and real-world project application — we offer tailored training and mentoring programs for teams that need a structured learning path."
+        },
+        {
+          "icon": "05 / SUPPLY CHAIN",
+          "title": "Supply Chain Modeling",
+          "description": "End-to-end logistics and supply chain simulation. Network optimization, risk analysis, and capacity planning."
+        },
+        {
+          "icon": "06 / RESEARCH",
+          "title": "Research Collaboration",
+          "description": "Joint research with academic institutions and government bodies. Technical writing, methodology design, and simulation-backed validation."
+        }
+      ]
+    },
+    "clients": {
+      "title": "Selected Clients",
+      "description": "Trusted by government agencies, large-scale engineering firms, and research institutions.",
+      "items": [
+        {
+          "name": "Logistics · Distribution · Supply Chain",
+          "project": "Fulfillment & Warehouse Optimization",
+          "description": "Simulation and throughput optimization of logistics facilities equipped with conveyors, sorters, AS/RS, AGVs, sequence buffers, and other unmanned systems. Facility location selection, supply chain design, and logistics network optimization."
+        },
+        {
+          "name": "Manufacturing · Smart Factory",
+          "project": "Manufacturing Digital Twin",
+          "description": "From manual assembly lines to fully automated facilities — extensive experience delivering simulation-based digital twin solutions across diverse manufacturing environments."
+        },
+        {
+          "name": "Government · Nuclear",
+          "project": "Nuclear Firms & Government Research Institutes",
+          "description": "High-reliability simulation modeling for nuclear facility operations, including material flow analysis and safeguards verification."
+        },
+        {
+          "name": "Construction · Engineering",
+          "project": "Major Construction Firms",
+          "description": "Construction process simulation and resource optimization for large-scale infrastructure projects. Multi-face excavation and complex site environment simulation."
+        },
+        {
+          "name": "Defense · Security",
+          "project": "Wargaming & Operational Scenario Analysis",
+          "description": "Agent-based wargame and operational scenario evaluation models. Unit deployment optimization and simulation-based decision support for complex battlefield environments."
+        },
+        {
+          "name": "Energy · Environment",
+          "project": "Energy Efficiency & LCA Simulation",
+          "description": "Energy facility operations optimization and LCA-based environmental impact simulation. Renewable energy system design and carbon reduction scenario analysis."
+        }
+      ]
+    },
+    "about": {
+      "photo_alt": "HyunHo Lee",
+      "tag": "// Principal Consultant",
+      "name": "HyunHo Lee",
+      "bio_1": "A simulation and digital twin specialist with over 10 years of field experience. PhD candidate in logistics at Incheon National University. Founding principal of DAS Lab, formerly operating as SimLab.",
+      "bio_1_continued": "",
+      "bio_2": "Delivered 25+ commercial simulation projects, 100+ corporate training sessions, and ongoing research partnerships with government and industry.",
+      "specs": [
+        "AnyLogic Certified Consultant",
+        "PhD Candidate — Incheon National University (Logistics)",
+        "10+ years of simulation consulting across logistics, ports, supply chain, manufacturing, nuclear, construction, rail, defense, and transportation sectors"
+      ]
+    },
+    "contact": {
+      "title": "Start a Project",
+      "description_lines": [
+        "Looking to model a complex system, build a digital twin, or train your team? Let's talk."
+      ],
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "office_label": "Office",
+      "office": "4F, 147 Yanghwa-ro, Mapo-gu, Seoul, WeWork 115-15",
+      "name_placeholder": "Name / Organization",
+      "email_placeholder": "Email Address",
+      "subject_placeholder": "Project Type (Simulation / Digital Twin / Training)",
+      "message_placeholder": "Describe your project or inquiry...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "// Message transmitted successfully.",
+      "failure": "// Transmission failed. Please try again."
+    }
+  },
+  "resource": {
+    "meta": {
+      "title": "DAS Lab — Resources"
+    },
+    "hero": {
+      "tag": "AnyLogic Learning · Books · Free Resources",
+      "title": "Simulation Mastery",
+      "accent": "Starts Here.",
+      "description": "A practical starter pack for learning AnyLogic and simulation modeling — curated materials, recommended books, and free resources you can use immediately.",
+      "primary_action": "Start Learning",
+      "secondary_action": "Free Resources"
+    },
+    "learning": {
+      "title": "Learning Materials",
+      "description": "From fundamentals to applied modeling patterns — best places to start and keep improving.",
+      "official_kicker": "01 / Official",
+      "official_description": "Core reference for modeling blocks, libraries, and built-in concepts. Use it to confirm \"how it works\" while building models.",
+      "beginner_kicker": "02 / Getting Started",
+      "beginner_title": "Free Learning Materials",
+      "beginner_description": "Beginner-friendly explanation of simulation concepts with examples. Great for learning the basics and building your first model.",
+      "advanced_kicker": "03 / Advanced",
+      "advanced_title": "Building a Custom UI-Based Simulation Experiment Environment",
+      "advanced_description": "AnyLogic Private Cloud lets you deploy browser-based simulation experiment environments with no installation required. Parameter control, experiment execution, and result visualization — all in one interface, enabling field teams to run models directly."
+    },
+    "books": {
+      "title": "Recommended Textbooks",
+      "description": "Books that help you go beyond \"tool usage\" — modeling rigor, experimentation, and trustworthy results.",
+      "fundamentals_kicker": "01 / Fundamentals",
+      "fundamentals_title": "Simulation Modeling Basics",
+      "fundamentals_description": "Learn the core vocabulary: entities, events, queues, resources, variability, and how to interpret results without overconfidence.",
+      "experiment_kicker": "02 / Experimentation",
+      "experiment_title": "Analysis & Validation",
+      "experiment_description": "Focus on verification/validation, scenario design, sensitivity checks, and KPI governance so your model becomes decision-grade."
+    },
+    "free": {
+      "title": "Free Resources",
+      "description": "Quick links you can use today: models, libraries, community knowledge, and learning materials.",
+      "models_title": "Example Model Library",
+      "models_description": "Browse ready-to-run examples to learn modeling structure, animation, and data collection.",
+      "community_description": "Questions, troubleshooting, and implementation tips from other builders. Great for unblock and edge cases.",
+      "demo_title": "Secondary Battery Electrode Manufacturing Process Simulation",
+      "demo_intro": "A customized demo model based on AnyLogic's open-source Chocolate Production example, adapted to reflect the material flow and resource logic of a secondary battery electrode manufacturing process. You can run the model live in your browser using the embed below.",
+      "demo_cta_prefix": "For inquiries on ",
+      "demo_cta_strong": "simulation modeling education or consulting",
+      "demo_cta_suffix": " — including applicability assessment, scope definition, and model development — contact DAS Lab.",
+      "kakao_action": "KakaoTalk",
+      "email_action": "Email Us",
+      "footnote": "* This demo runs on AnyLogic Cloud servers. Based on the open-source Chocolate Production model by AnyLogic Company, modified and distributed by DAS Lab."
+    }
+  }
+}

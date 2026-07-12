@@ -1,0 +1,21 @@
+	<!-- NAV -->
+	<nav>
+		<a href="{{ url_for('home', lang=lang) }}" class="nav-logo">
+			<img class="nav-logo-img" src="{{ url_for('static', filename='logo/daslab_logo_dark_simple.svg') }}" alt="DAS Lab" />
+			<span class="nav-logo-sub">Digital Twin · AI · Simulation</span>
+		</a>
+		<ul class="nav-links">
+			<li><a href="{{ '#services' if current_page == 'index' else url_for('home', lang=lang, _anchor='services') }}">{{ common.nav.services }}</a></li>
+			<li><a href="{{ '#clients' if current_page == 'index' else url_for('home', lang=lang, _anchor='clients') }}">{{ common.nav.clients }}</a></li>
+			<li><a href="{{ '#about' if current_page == 'index' else url_for('home', lang=lang, _anchor='about') }}">{{ common.nav.about }}</a></li>
+			<li><a href="{{ url_for('resources', lang=lang) }}">{{ common.nav.resources }}</a></li>
+		</ul>
+		<div class="nav-actions">
+			<div class="nav-lang" aria-label="Language switch">
+				<a{% if lang == 'ko' %} class="is-active" aria-current="page"{% endif %} href="{{ url_for('home' if current_page == 'index' else 'resources', lang='ko') }}">KR</a>
+				<span class="nav-lang-sep">|</span>
+				<a{% if lang == 'en' %} class="is-active" aria-current="page"{% endif %} href="{{ url_for('home' if current_page == 'index' else 'resources', lang='en') }}">EN</a>
+			</div>
+			<a href="{{ '#contact' if current_page == 'index' else url_for('home', lang=lang, _anchor='contact') }}" class="nav-cta">Contact</a>
+		</div>
+	</nav>
